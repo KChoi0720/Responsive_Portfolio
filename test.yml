@@ -1,0 +1,25 @@
+name: Test Project
+
+on:
+  pull_request:                     # collaborate on code with other people.
+    branches:
+      -main
+
+jobs:
+  test:                             # cal job name 'test'
+    runs-on: ubuntu-latest       # define operating system the job will run on
+    container:
+      image: node:20                # use what depend on programming language
+    steps:
+      - uses: actions/checkout@v3   # add our code to our virtual environments using checkout action
+        with:
+        node-version:20
+      - run: npm ci                 # make sure all dependencies have been installed for project, npm ci is to run a clean install
+      - run: npm test               # use Jest when working with a JavaScript project
+      - run: npm run build          # use build to compile project
+
+
+
+
+
+
