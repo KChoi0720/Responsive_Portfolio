@@ -6,7 +6,7 @@ on:
       -main
 
 jobs:
-  test:                             # cal job name 'test'
+  test:                             # call job name 'test'
     runs-on: ubuntu-latest       # define operating system the job will run on
     container:
       image: node:20                # use what depend on programming language
