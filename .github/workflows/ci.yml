@@ -41,7 +41,7 @@ jobs:
         image: jp0908/responsive_portfolio 
         registry: docker.io
         # Below 'secrets' is placeholder
-        # Create credentials in 'Settings', the user name is the one before '/', here is jp0908.
+        # Create credentials in 'Settings', the user name is the one before '/', here is jp0908
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
