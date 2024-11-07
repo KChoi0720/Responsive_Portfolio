@@ -38,7 +38,7 @@ jobs:
       with:
         # image: docker-hub-repo/image-name
         # change above image-name into the docker hub repository related name from: docker push new-repo:tagname
-        iamge: new-repo 
+        image: jp0908/responsive_portfolio 
         registry: docker.io
         # Below 'secrets' is placeholder
         # Create credentials in 'Settings', 
